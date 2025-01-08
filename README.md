@@ -1,4 +1,3 @@
-The formatting issues likely stem from a lack of Markdown syntax for GitHub. Here's an updated and properly formatted **README.md** file to display correctly on GitHub:
 
 ---
 
