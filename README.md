@@ -36,13 +36,13 @@ install.packages("ggplot2")
 
 Clone this repository and set your working directory:
 ```bash
-git clone https://github.com/yourusername/R_codes_Data-visualization.git
+git clone https://github.com/SamsudeenAshad/R_codes_Data-visualization.git
 cd R_codes_Data-visualization
 ```
 
 In R, set your working directory to the folder containing the repository:
 ```R
-setwd("D:/Git Folder/R_codes_Data-visualization")
+setwd("path/to/your/cloned/repository")
 ```
 
 ---
@@ -97,8 +97,6 @@ Faceted scatter plots compare all datasets in `datasaurus_dozen`.
 - [ggplot2 Documentation](https://ggplot2.tidyverse.org/)
 
 ---
-
-Save this text as **README.md** in your repository, and GitHub will render it correctly. Let me know if you need further assistance!
 
 
 
