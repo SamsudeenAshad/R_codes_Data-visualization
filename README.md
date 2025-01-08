@@ -83,12 +83,12 @@ ggplot(datasaurus_dozen, aes(x = x, y = y)) +
 ### Dino Dataset Plot
 This plot highlights the unique shape of the "Dino" dataset.
 
-*(![image](https://github.com/user-attachments/assets/10a4f596-7ee2-4f67-9bbd-ad67ac99c839))*
+*![image](https://github.com/user-attachments/assets/10a4f596-7ee2-4f67-9bbd-ad67ac99c839)*
 
 ### All Datasets Plot
 Faceted scatter plots compare all datasets in `datasaurus_dozen`.
 
-*(![image](https://github.com/user-attachments/assets/e40f377c-0e94-4d0b-a92a-ca353ef85979))*
+*![image](https://github.com/user-attachments/assets/e40f377c-0e94-4d0b-a92a-ca353ef85979)*
 
 ---
 
