@@ -1,49 +1,57 @@
-# R_codes_Data-visualization
+The formatting issues likely stem from a lack of Markdown syntax for GitHub. Here's an updated and properly formatted **README.md** file to display correctly on GitHub:
 
-Data Visualization in R: Exploring the Datasaurus Dozen
-This repository demonstrates how to visualize the famous Datasaurus Dozen dataset using R. The dataset highlights the importance of visualizing data rather than relying solely on summary statistics.
+---
 
-Features
-Scatter plot of the "Dino" dataset.
-Scatter plots for all datasets in the datasaurus_dozen, using facet_wrap for individual panels.
-Requirements
+# Data Visualization in R: Exploring the Datasaurus Dozen
+
+This repository demonstrates how to visualize the famous **Datasaurus Dozen** dataset using R. The dataset highlights the importance of visualizing data rather than relying solely on summary statistics.
+
+## Features
+- **Scatter plot of the "Dino" dataset**: A visualization of one dataset within the `datasaurus_dozen`.
+- **Scatter plots for all datasets**: Uses `facet_wrap` for individual panels, showcasing the unique shapes of each dataset.
+
+---
+
+## Requirements
+
 Make sure you have the following installed:
 
-R (v4.3.2 or higher)
-RStudio (optional, but recommended)
-R Packages
+- **R (v4.3.2 or higher)**  
+- **RStudio** (optional, but recommended)  
+
+### R Packages
 Install these packages before running the script:
 
-datasauRus: Provides the Datasaurus Dozen dataset.
-ggplot2: For creating the visualizations.
-Run the following commands to install the required packages:
+- `datasauRus`: Provides the Datasaurus Dozen dataset.  
+- `ggplot2`: For creating the visualizations.
 
-R
-Copy code
+Run the following commands to install the required packages:
+```R
 install.packages("datasauRus")
 install.packages("ggplot2")
-Setup
-Clone this repository and set your working directory:
+```
 
-bash
-Copy code
+---
+
+## Setup
+
+Clone this repository and set your working directory:
+```bash
 git clone https://github.com/yourusername/R_codes_Data-visualization.git
 cd R_codes_Data-visualization
-In R, set the working directory:
+```
 
-R
-Copy code
-setwd("path/to/your/cloned/repository")
-Script Overview
-Dino Dataset Visualization
-This script creates a scatter plot for the "Dino" dataset, showcasing its unique shape while maintaining consistent summary statistics.
+In R, set your working directory to the folder containing the repository:
+```R
+setwd("D:/Git Folder/R_codes_Data-visualization")
+```
 
-All Datasets Visualization
-Generates scatter plots for all datasets in the Datasaurus Dozen, using facets for side-by-side comparison.
+---
 
-Example Code
-R
-Copy code
+## Code
+
+### Dino Dataset Scatter Plot
+```R
 # Load required libraries
 library(datasauRus)
 library(ggplot2)
@@ -51,25 +59,48 @@ library(ggplot2)
 # Filter for the "Dino" dataset
 dino_data <- subset(datasaurus_dozen, dataset == "dino")
 
-# Create a scatter plot for the Dino dataset
+# Scatter plot for the Dino dataset
 ggplot(dino_data, aes(x = x, y = y)) +
   geom_point(color = 'blue', size = 2) +
   theme_minimal() +
   labs(title = "Datasaurus: Dino", x = "X", y = "Y")
+```
 
-# Create scatter plots for all datasets
+### Scatter Plots for All Datasets
+```R
+# Scatter plots for all datasets in the Datasaurus Dozen
 ggplot(datasaurus_dozen, aes(x = x, y = y)) +
   geom_point(alpha = 0.7) +
   facet_wrap(~ dataset, scales = "free") +
   theme_minimal() +
   labs(title = "Datasaurus Dozen", x = "X", y = "Y")
-Outputs
-Dino Dataset
-![image](https://github.com/user-attachments/assets/10a4f596-7ee2-4f67-9bbd-ad67ac99c839)
-Datasaurus Dozen
-![image](https://github.com/user-attachments/assets/e40f377c-0e94-4d0b-a92a-ca353ef85979)
+```
 
-References
-Datasaurus Dozen Paper
-ggplot2 Documentation
-Feel free to modify this according to your preferences! Replace placeholders like path-to-your-saved-plot.png with actual paths if you include example plots in your repository.
+---
+
+## Example Output
+
+### Dino Dataset Plot
+This plot highlights the unique shape of the "Dino" dataset.
+
+*(![image](https://github.com/user-attachments/assets/10a4f596-7ee2-4f67-9bbd-ad67ac99c839))*
+
+### All Datasets Plot
+Faceted scatter plots compare all datasets in `datasaurus_dozen`.
+
+*(![image](https://github.com/user-attachments/assets/e40f377c-0e94-4d0b-a92a-ca353ef85979))*
+
+---
+
+## References
+
+- [Datasaurus Dozen Dataset](https://www.autodeskresearch.com/publications/samestats)  
+- [ggplot2 Documentation](https://ggplot2.tidyverse.org/)
+
+---
+
+Save this text as **README.md** in your repository, and GitHub will render it correctly. Let me know if you need further assistance!
+
+
+
+
