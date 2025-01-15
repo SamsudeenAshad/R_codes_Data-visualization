@@ -1,5 +1,5 @@
-getwd()
-setwd("D:/Git Folder/R_codes_Data-visualization")
+getwd() #show loaction
+setwd("D:/Git Folder/R_codes_Data-visualization") #set lacation
 
 
 unlink("D:/software/install/R/R-4.3.2/library/00LOCK", recursive = TRUE)
