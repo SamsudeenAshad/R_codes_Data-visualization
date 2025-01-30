@@ -58,3 +58,20 @@ x
 x[3]   #5
 
 
+df_name= data.frame("ashad",23,"badulla")
+df_name
+
+df_name= data.frame("gfgjf",43,"kkjh")
+df_name
+
+
+name <- c("look","met","we")
+age <- c(76,98,89)
+
+df <- data.frame(name,age)
+View(df)
+
+last_name <- c("frm","kon","rat")
+df$last_name
+
+View(df)
